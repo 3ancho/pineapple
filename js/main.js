@@ -19,4 +19,8 @@ $( document ).ready(function() {
         }
         $("#item_orange_chicken_count").text(count);
     });
+
+    $("#chicken_add").click(function(){
+        $("#item_orange_chicken_count_list").text($("#item_orange_chicken_count").text());
+    });
 });

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="pineapple.js"></script>
 </head>
 
 <body>
@@ -48,18 +49,21 @@
 
     <div data-role="content">
         <ul data-role="listview" data-inset="true">
-            <li><a href="#item_orange_chicken">
-                <img src="/images/item_orange_chicken.jpg">
-                <h2>Orange Chicken</h2>
-                <p>$10.99</p></a>
+            <li class="food_item">
+                <a href="#item_orange_chicken">
+                <h2 class="food_name">Orange Chicken</h2>
+                <p class="food_price">$10.99</p>
+                <span class="ui-li-count" id="item_orange_chicken_count_list">0</span></a>
             </li>
-            <li><a href="#">
-                <h2>Warning</h2>
-                <p>$9.79</p></a>
+            <li class="food_item"><a href="#">
+                <h2 class="food_name">Warning</h2>
+                <p class="food_price">$9.79</p>
+                <span class="ui-li-count">0</span></a>
             </li>
-            <li><a href="#">
-                <h2>Wolfgang Amadeus Phoenix</h2>
-                <p>Phoenix</p></a>
+            <li class="food_item"><a href="#">
+                <h2 class="food_name">Wolfgang Amadeus Phoenix</h2>
+                <p class="food_price">Phoenix</p>
+                <span class="ui-li-count">0</span></a>
             </li>
         </ul>
     </div><!-- /content -->
@@ -81,11 +85,12 @@
     <div data-role="header">
         <a href="#panda" data-icon="back">Back</a>
         <h1>Orange Chicken</h1>
-        <a href="#" data-icon="check" data-theme="b">Count <span id="item_orange_chicken_count"> </span></a>
+        <a href="#panda" data-icon="check" data-theme="b" id="chicken_add">Order <span id="item_orange_chicken_count">1</span></a>
     </div><!-- /header -->
     <div data-role="content">
-        <p> Chicken </p>
-        <img src="/images/item_orange_chicken.jpg" />
+        <h1>Orange Chicken</h1>
+        <img src="images/item_orange_chicken.jpg" class="food_image"/>
+        <br />
         <a href="#" id="item_orange_chicken_plus" data-role="button" data-icon="plus" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Plus</a>
         <a href="#" id="item_orange_chicken_minus" data-role="button" data-icon="minus" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Minus</a>
     </div><!-- /content -->

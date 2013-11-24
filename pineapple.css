@@ -1,3 +1,19 @@
+td {
+    padding-right: 15px;
+}
+
 .food_image {
     width: 20%;
+}
+
+.nutrition_a {
+    width: 100%;    
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.nutrition_b, .nutrition_a {
+    list-style-type: none;
+    border-bottom: 1px dashed gray;
+    margin-top: 10px; 
 }

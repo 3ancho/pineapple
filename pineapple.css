@@ -17,3 +17,8 @@ td {
     border-bottom: 1px dashed gray;
     margin-top: 10px; 
 }
+
+.list_icon {
+    width: 32px;
+
+}
